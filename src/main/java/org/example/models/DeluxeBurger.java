@@ -15,8 +15,8 @@ public class DeluxeBurger extends Hamburger{
 
     public DeluxeBurger(String name, String meat, String breadRollType) {
         super(name, meat, 19.10, breadRollType);
-        this.cips = "Curvy";
-        this.drink = "Coke";
+        this.cips = "CURVY";
+        this.drink = "COKE";
     }
 
     @Override
@@ -45,6 +45,6 @@ public class DeluxeBurger extends Hamburger{
         System.out.println("Meat: " + this.getMeat());
         System.out.println("BreadRollType: " + this.getBreadRollType());
         System.out.println("Price: " + this.getPrice());
-        return this.getPrice();
+        return 0;
     }
 }

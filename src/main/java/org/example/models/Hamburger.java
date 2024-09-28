@@ -21,22 +21,22 @@ public class Hamburger {
         this.breadRollType = breadRollType;
     }
 
-    public void addHamburgerAddition1(String name, double price){
+    public void addHamburgerAddition1(String name, double price) {
         this.addition1Name = name;
         this.addition1Price = price;
     }
 
-    public void addHamburgerAddition2(String name, double price){
+    public void addHamburgerAddition2(String name, double price) {
         this.addition2Name = name;
         this.addition2Price = price;
     }
 
-    public void addHamburgerAddition3(String name, double price){
+    public void addHamburgerAddition3(String name, double price) {
         this.addition3Name = name;
         this.addition3Price = price;
     }
 
-    public void addHamburgerAddition4(String name, double price){
+    public void addHamburgerAddition4(String name, double price) {
         this.addition4Name = name;
         this.addition4Price = price;
     }
@@ -91,36 +91,35 @@ public class Hamburger {
 
     public double itemizeHamburger() {
         double totalPrice = this.price;
-        if (addition1Name != null) {
-            totalPrice += addition1Price;
-        }
-        if (addition2Name != null) {
-            totalPrice += addition2Price;
-        }
-        if (addition3Name != null) {
-            totalPrice += addition3Price;
-        }
-        if (addition4Name != null) {
-            totalPrice += addition4Price;
-        }
         System.out.println("Name: " + this.name);
         System.out.println("Meat: " + this.meat);
         System.out.println("BreadRollType: " + this.breadRollType);
-        if (addition1Name != null) {
-            System.out.println("Addition1: " + addition1Name);
+
+        if (this.addition1Name != null) {
+            System.out.println("Addition1: " + this.addition1Name);
+            totalPrice += this.addition1Price;
         }
-        if (addition2Name != null) {
-            System.out.println("Addition2: " + addition2Name);
+
+        if (this.addition2Name != null) {
+            System.out.println("Addition2: " + this.addition2Name);
+            totalPrice += this.addition2Price;
         }
-        if (addition3Name != null) {
-            System.out.println("Addition3: " + addition3Name);
+
+        if (this.addition3Name != null) {
+            System.out.println("Addition3: " + this.addition3Name);
+            totalPrice += this.addition3Price;
         }
-        if (addition4Name != null) {
-            System.out.println("Addition4: " + addition4Name);
+
+        if (this.addition4Name != null) {
+            System.out.println("Addition4: " + this.addition4Name);
+            totalPrice += this.addition4Price;
         }
+
         System.out.println("Price: " + totalPrice);
         return totalPrice;
     }
+
+
 
 
 
